@@ -1,0 +1,78 @@
+@charset"utf-8";
+*{
+	margin: 0;
+	padding:0;
+	outline: 0;
+	border: 0;
+}
+html{
+	max-width: 640px;
+	min-width: 320px;
+}
+
+.container{
+	width: 100%;
+	position: relative;
+}
+
+div{
+	display: inline-block;
+}
+
+.left{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	z-index: 11;
+	left: 0;
+	background-color: #B6CDEC;
+}
+
+.right{
+	width: 50%;
+	height: 100%;
+	/* left: 50%; */
+	position: absolute;
+	z-index: 11;
+	right: 0;
+	background-color: #60ADC1;
+}
+
+div a img{
+	width: 100%;
+}
+
+/* @-moz-keyframes "whale"{
+	0%{
+		-moz-transform:tranlateX(0%);
+	}
+	100%{
+		-moz-transform:tranlateX(100%);
+	}
+}
+ */
+/* @-webkit-keyframes "whale"{
+	0%{
+		-webkit-transform:tranlateX(0%);
+	}
+	100%{
+		-webkit-transform:tranlateX(100%);
+	}
+} */
+
+#whale{
+	position: absolute;
+	z-index: 12;
+	bottom:0; 
+	left: 50%;
+	-webkit-transform:tranlateX(100%);
+	animation:"whale" 0.5s 1 6s forwards;
+	-webkit-animation:"whale" 0.5s 1 6s forwards;
+	-moz-animation:"whale" 0.5s 1 6s forwards;
+	-o-animation:"whale" 0.5s 1 6s forwards;
+}
+
+#hat{
+	position: absolute;
+	z-index: 13;
+}
